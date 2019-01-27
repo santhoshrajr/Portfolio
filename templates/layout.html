@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Santhosh Ravirala">
+    <meta name="description"
+          content="{% block description %}Passionate software engineer with strong knowledge and experience in Microsoft .Net development.{% endblock %}"/>
+    <title>{% block title %}{% endblock %} :: Santhosh Ravirala</title>
+    <link rel="shortcut icon" href="{{ url_for("static", filename="images/sanimage.ico") }}">
+    <link rel="stylesheet" href="{{ url_for("static", filename="node_modules/bootswatch/yeti/bootstrap.min.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename="css/main.css") }}?v={{ css_version }}">
+    <script defer type="text/javascript"
+            src="{{ url_for("static", filename="node_modules/jquery/dist/jquery.min.js") }}"></script>
+    <script defer type="text/javascript"
+            src="{{ url_for("static", filename="node_modules/bootstrap/dist/js/bootstrap.min.js") }}"></script>
+    <script defer type="text/javascript"
+            src="{{ url_for("static", filename="node_modules/biginteger/biginteger.js") }}"></script>
+    <script defer type="text/javascript"
+            src="{{ url_for("static", filename="js/main.js") }}?v={{ js_version }}"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-9865778-4', 'auto');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <strong>SR</strong>
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="header-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        Employment
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="/employment/ash/">
+                                <img alt="ASH"
+                                     src="{{ url_for("static", filename="images/icons/ash.png") }}"/>
+                                American Specialty Health
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/employment/cts/">
+                                <img alt="Cognizant"
+                                     src="{{ url_for("static", filename="images/icons/cognizant.png") }}"/>
+                                Cognizant Technology Solutions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/employment/mobile/">
+                                <img alt="Clemson" src="{{ url_for("static", filename="images/icons/clemson.png") }}"/>
+                                Clemson University - Mobile App
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/employment/gis/">
+                                <img alt="Clemson" src="{{ url_for("static", filename="images/icons/clemson.png") }}"/>
+                                Clemson University - GIS
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        Code
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="https://github.com/santhoshrajr/ADHDmail" target="_blank">ADHDmail</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/santhoshrajr/Charizard-vs-Vegeta-Game" target="_blank">Charizard vs Vegeta</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/santhoshrajr/Event-Management-System" target="_blank">Event Management System</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/santhoshrajr/Toward--FineGrained" target="_blank">Toward Fine Grained</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/santhoshrajr/SignatureValidation" target="_blank">Signature Validation</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/santhoshrajr/SafeDriving-Android-App" target="_blank">Safe Driving</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/santhoshrajr/UserAlbum-AndroidApp" target="_blank">User Album</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/santhoshrajr/DiceGame-AndroidApp" target="_blank">Dice Game</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/santhoshrajr/ShoppingList-AndroidApp" target="_blank">Shopping List</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/raghuvaran/AndroidEoE" target="_blank">EoE Manager</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/santhoshrajr/Clothing" target="_blank">Clothing</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/santhoshrajr/ProximitySearch" target="_blank">Proximity Search</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/santhoshrajr/Python-Interpreter-in-C-" target="_blank">C++ Python Interpreter</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/santhoshrajr/MarsRover" target="_blank">Mars Rover</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/santhoshrajr/Cashier-Line-Simulation-" target="_blank">Cashier Line Simulation</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/santhoshrajr/Secure-Multi-Keyword-Retrieval-over-Encrypted-Cloud" target="_blank">Multi Keyword</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/santhoshrajr/Interview-Programs" target="_blank">Interview Programs</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        Tools
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=my.santh.shopping.shoppinglist"
+                               target="_blank">Simple Shopping List</a>
+                        </li>
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=my.santh.dicegame.dice50"
+                               target="_blank"">Dice Game</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        Profiles
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="https://github.com/santhoshrajr" target="_blank">
+                                <img alt="GitHub" src="{{ url_for("static", filename="images/icons/github.png") }}"/>
+                                GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/santhoshrajravirala/" target="_blank">
+                                <img alt="LinkedIn"
+                                     src="{{ url_for("static", filename="images/icons/linkedin.png") }}"/> LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+<br/>
+<footer class="footer text-center">
+    <div class="container">
+        <p class="text-muted">
+            <a href="https://github.com/santhoshrajr/portfolio" target="_blank">This site is 100% open source.</a>
+        </p>
+    </div>
+</footer>
+</body>
+</html>

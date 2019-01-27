@@ -1,0 +1,31 @@
+{% extends "employer.html" %}
+{% from "employer.html" import language_icons, tool_icons %}
+{% set employer = "Clemson University" %}
+{% set description = "Summary of my work and accomplishments at %s." % employer %}
+{% set title = "Mobile Application Developer Intern" %}
+{% set dates = "June 2016 – Aug 2016" %}
+{%set url ="https://people.cs.clemson.edu/~rchowda/EoE/"%}
+{%set completeurl = "<a href=%s>sdg</a>" %url %}
+{% set experiences = [
+ "EoE Manager - Link: %s" % url,
+"Developed android application for patients suffering from Eosinophilic esophagitis (EoE) disease. Captured real time information with food images and converted paper based surveys to electronic surveys.",
+"Developed authoring tool for doctors to analyze the food and dietary habits of patients have and recommend treatments. Developed timers to remind patients to submit their surveys and food diary.",
+] %}
+{% set languages = [
+language_icons['Java'],
+language_icons['HTML'],
+language_icons['CSS'],
+language_icons['Python'],
+language_icons['JavaScript'],
+language_icons['AngularJS'],
+language_icons['Bootstrap'],
+language_icons['Flask'],
+language_icons['Bash'],
+] %}
+{% set tools = [
+tool_icons['MySQL'],
+tool_icons['Android'],
+tool_icons['Cassandra'],
+tool_icons['MongoDB'],
+tool_icons['Git'],
+] %}

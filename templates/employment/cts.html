@@ -1,0 +1,34 @@
+{% extends "employer.html" %}
+{% from "employer.html" import language_icons, tool_icons %}
+{% set employer = "Cognizant Technology Solutions" %}
+{% set description = "Summary of my work and accomplishments at %s." % employer %}
+{% set title = "Programmer Analyst" %}
+{% set dates = "June 2014 – November 2015" %}
+{% set experiences = [
+"Developed different internal web applications in ASP.NET - Deals C# logics, SQL Stored Procedures, Advanced jQuery, Interactive and user friendly UI –CSS, Angular JS, Automation, Macros.",
+"Created web services in .NET and charts using SAP business objects dashboard.",
+"Developed code in C# for automating excel validation and JSON conversion.",
+"Integrated SQL Server with SAP-BI in developing a real time dashboard for higher level management to know the status of each team performance.",
+"Worked with different stakeholders of the business to understand the requirements.",
+"Developed Risk Management Monitoring System which was heavily used by different internal operations team to monitor the status and improve performance.",
+"Generating auto-trigger emails for any update in the team."
+] %}
+{% set languages = [
+language_icons['C#'],
+language_icons['.NET'],
+language_icons['Python'],
+language_icons['Java'],
+language_icons['C++'],
+language_icons['C'],
+language_icons['JavaScript'],
+language_icons['AngularJS'],
+language_icons['Bootstrap'],
+language_icons['Flask'],
+language_icons['Bash'],
+] %}
+{% set tools = [
+tool_icons['Docker'],
+tool_icons['IIS'],
+tool_icons['Microsoft SQL Server'],
+tool_icons['Git'],
+] %}

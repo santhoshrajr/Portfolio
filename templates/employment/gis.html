@@ -1,0 +1,26 @@
+{% extends "employer.html" %}
+{% from "employer.html" import language_icons, tool_icons %}
+{% set employer = "Clemson University" %}
+{% set description = "Summary of my work and accomplishments at %s." % employer %}
+{% set title = "Software Developer/GIS Intern" %}
+{% set dates = "Aug 2016 – May 2017" %}
+{% set experiences = [
+ "Developed databases in ArcCatalog dealing with geographical datasets and GIS Maps in ArcGIS.",
+ "Analyzed data and helped in providing better decision making by cutting down manual processes",
+] %}
+{% set languages = [
+language_icons['Python'],
+language_icons['Java'],
+language_icons['C++'],
+language_icons['C'],
+language_icons['Node.js'],
+language_icons['JavaScript'],
+language_icons['AngularJS'],
+language_icons['Bootstrap'],
+language_icons['HTML'],
+language_icons['CSS'],
+] %}
+{% set tools = [
+"ArcGIS",
+"ArcCatalog",
+] %}

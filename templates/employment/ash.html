@@ -1,0 +1,39 @@
+{% extends "employer.html" %}
+{% from "employer.html" import language_icons, tool_icons %}
+{% set employer = "American Specialty Health" %}
+{% set description = "Summary of my work and accomplishments at %s." % employer %}
+{% set title = "Associate Software Engineer" %}
+{% set dates = "June 2017 – Present" %}
+{% set experiences = [
+"Developed different fitness applications in healthcare business using .NET technologies.",
+"Followed Scrum process for creating new features, work items and deployment using agile methods.",
+"Working constantly with other disciplines and PO to get the requirements right.",
+"Involved in development and implementation of microservices and processors.",
+"Developed a single platform code base for all the fitness applications where multiple tenants are rendered.",
+"Developing of new functionalities and enhancements with unit testing.",
+"Involved in CICD pipeline for streamlining builds and releases and migration from TFS to Azure DevOps.",
+"Written Stored Procedures, Indexes and Triggers using SQL Server.",
+"Solving complex/minor code issues, fixing database discrepancies.",
+"Provide root cause fixes for constantly occurring issues/bugs.",
+] %}
+{% set languages = [
+language_icons['C#'],
+language_icons['.NET'],
+language_icons['Swagger'],
+language_icons['HTML'],
+language_icons['CSS'],
+"Ember",
+language_icons['MSSQL'],
+language_icons['JavaScript'],
+language_icons['jQuery'],
+language_icons['Bootstrap'],
+language_icons['Node.js'],
+] %}
+{% set tools = [
+tool_icons['Microsoft SQL Server'],
+tool_icons['Azure'],
+tool_icons['Redis'],
+tool_icons['Docker'],
+tool_icons['IIS'],
+tool_icons['Git'],
+] %}

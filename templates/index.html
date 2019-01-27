@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+{%- block title -%}
+    Home
+{%- endblock -%}
+{% block content %}
+    <div class="row">
+        <div class="col-md-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-header text-center">
+                        <h2>About Me</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="pull-left wrapped-image img-responsive"
+                         src="{{ url_for("static", filename="images/santhoshr.jpg") }}"
+                         alt="Santhosh Ravirala"/>
+                        <p>
+                            I'm a passionate software engineer with an affinity for Microsoft .Net Technologies. I have experience in Web & Windows Application Development, Android Apps and Full Stack Developer. 
+                            I truly enjoy what I do, so much so that I'd say my work is more of a hobby than a job. I have good knowledge on Design patterns and SOLID principles in object oriented programming.I also solve problems regarding algorithms and datastructures to develop problem solving skills.
+                        </p>
+                    <div class="text-center">
+                        <h3>Specialties</h3>
+                        <p>
+                             C#, Python, C++, R, SQL, JavaScript, Bash
+                            <br/>
+                             Microsoft SQL Server, MySQL, Redis 
+                            <br/>
+                            .NET, Node.js, Android, Linux, Git, ASP.NET MVC5
+                            <br/>
+                            Ember, HTML5, CSS3, PHP, jQuery, DOM and Bootstrap
+                            <br/>
+                            Service Stack, Azure DevOps, TFS, Entity Framework
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-12 development-activity">
+                    <div class="page-header text-center">
+                        <h2>Development Activity</h2>
+                    </div>
+                    <div id="loader" class="text-center">
+                        <br/>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"
+                             fill="#008cba">
+                            <path transform="translate(2)" d="M0 12 V20 H4 V12z">
+                                <animate attributeName="d"
+                                         values="M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z"
+                                         dur="1.2s" repeatCount="indefinite" begin="0" keytimes="0;.2;.5;1"
+                                         keySplines="0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8"
+                                         calcMode="spline"/>
+                            </path>
+                            <path transform="translate(8)" d="M0 12 V20 H4 V12z">
+                                <animate attributeName="d"
+                                         values="M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z"
+                                         dur="1.2s" repeatCount="indefinite" begin="0.2" keytimes="0;.2;.5;1"
+                                         keySplines="0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8"
+                                         calcMode="spline"/>
+                            </path>
+                            <path transform="translate(14)" d="M0 12 V20 H4 V12z">
+                                <animate attributeName="d"
+                                         values="M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z"
+                                         dur="1.2s" repeatCount="indefinite" begin="0.4" keytimes="0;.2;.5;1"
+                                         keySplines="0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8"
+                                         calcMode="spline"/>
+                            </path>
+                            <path transform="translate(20)" d="M0 12 V20 H4 V12z">
+                                <animate attributeName="d"
+                                         values="M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z"
+                                         dur="1.2s" repeatCount="indefinite" begin="0.6" keytimes="0;.2;.5;1"
+                                         keySplines="0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8"
+                                         calcMode="spline"/>
+                            </path>
+                            <path transform="translate(26)" d="M0 12 V20 H4 V12z">
+                                <animate attributeName="d"
+                                         values="M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z"
+                                         dur="1.2s" repeatCount="indefinite" begin="0.8" keytimes="0;.2;.5;1"
+                                         keySplines="0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8"
+                                         calcMode="spline"/>
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <div id="development-activity"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
